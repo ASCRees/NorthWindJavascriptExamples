@@ -85,3 +85,4 @@ function getSingleProductUsingFetch(id) // Using a promise to call the web api. 
     .then(data=> outputResponse(data))
      .catch( error => console.error('error:', error) );
 }
+
