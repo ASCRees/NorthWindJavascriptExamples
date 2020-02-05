@@ -1,0 +1,28 @@
+<html>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+     <body>
+        <div class="promptcontainer">
+            <input id="promptID" name="promptID"/>
+            <button name="promptSubmit" onclick="getSingleProducts(document.getElementById('promptID').value)">Search By Id</button>
+            <button name="promptSubmit" onclick="getSingleProductUsingFetch(document.getElementById('promptID').value)">Search By Id Fetch</button>
+            <button name="promptSubmit" onclick="getMultipleProducts(document.getElementById('promptID').value)">Search Multiple Products</button>
+        </div>
+        <div class="container">
+            <table id="userTable" border="1" >
+               <thead>
+                 <tr>
+                   <th width="5%">Product ID</th>
+                   <th width="20%">ProductName</th>
+                   <th width="10%">QuantityPerUnit</th>
+                   <th width="10%">UnitPrice</th>
+                   <th width="10%">UnitsInStock</th>
+                   <th width="30%">UnitsOnOrder</th>
+                 </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+         </div>
+    </body>
+    <script type="text/javascript" src="callwebapi.js"></script>
+</html>
+
